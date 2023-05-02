@@ -7,12 +7,24 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop" />
+
     <com.google.android.material.appbar.AppBarLayout
+        android:layout_marginTop="20dp"
+        app:elevation="0dp"
+        android:background="@android:color/transparent"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
 
         <com.google.android.material.appbar.MaterialToolbar
+            android:background="@android:color/transparent"
+
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize" />

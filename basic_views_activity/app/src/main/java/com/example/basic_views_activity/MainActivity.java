@@ -18,6 +18,8 @@ import com.example.basic_views_activity.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Window w = getWindow();
+        w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+
         super.onCreate(savedInstanceState);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
