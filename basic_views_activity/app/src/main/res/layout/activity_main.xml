@@ -13,6 +13,10 @@
         android:src="@drawable/background"
         android:scaleType="centerCrop" />
 
+    <!--
+        We should compute status bar height using the following guideline.
+        https://stackoverflow.com/questions/3407256/height-of-status-bar-in-android
+    -->
     <com.google.android.material.appbar.AppBarLayout
         android:layout_marginTop="20dp"
         app:elevation="0dp"
